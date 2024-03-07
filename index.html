@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap') * {
+        margin: 0%;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+
+    body {
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        overflow: hidden;
+
+    }
+
+    .logo {
+        cursor: pointer;
+    }
+
+    nav {
+        margin: auto;
+        display: flex;
+        width: 70%;
+        cursor: pointer;
+        margin-top: -10px;
+        justify-content: space-evenly;
+        border-bottom-left-radius: 100px;
+        border-bottom-right-radius: 100px;
+        align-items: center;
+        text-align: center;
+        background-color: rgb(206, 181, 181);
+        color: rgb(255, 255, 255);
+        padding: 8px 40px;
+        background-color: #222222;
+    }
+
+
+
+    nav ul {
+
+        display: flex;
+        gap: 50px;
+    }
+
+    nav ul li:hover {
+        color: orangered;
+
+    }
+
+    .mobileno {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border: 1px solid orange;
+        padding: 10px;
+        position: relative;
+
+    }
+
+    .services {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 100px;
+        width: 100%;
+        color: aliceblue;
+        position: relative;
+        opacity: 0.3;
+        width: 100%;
+
+    }
+
+    .carinfo {
+        width: 40%;
+        margin-left: 150px;
+        font-size: 30px;
+        position: absolute;
+        color: aliceblue;
+        top: 200px;
+    }
+
+    .btn {
+        border: none;
+        background-color: orange;
+        padding: 10px;
+        margin-top: 50px;
+        color: aliceblue;
+        position: relative;
+        font-size: 15px;
+
+
+    }
+    button.btn::after {
+        content: '';
+        height: 28px;
+        width: 19px;
+        position: absolute;
+        background: black;
+        transform: rotate(45deg);
+        top: -13px;
+        right: 95px;
+
+    }
+
+    button.btn::before {
+        content: '';
+        height: 28px;
+        width: 19px;
+        position: absolute;
+        background: black;   
+        transform: rotate(45deg);
+        top: 54%;
+        left: 90%;
+    }
+
+    
+
+    .pngcar img {
+        position: absolute;
+        width: 800px;
+        right: -120px;
+        bottom: 0;
+    }
+
+    .mob1 {
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background-color: #222222;
+        width: 5px;
+        height: 10px;
+    }
+
+    .mob2 {
+        position: absolute;
+        bottom: -2px;
+        right: -2px;
+        background-color: #222222;
+        width: 5px;
+        height: 10px;
+    }
+</style>
+
+<body>
+
+    <nav>
+        <div class="navbar">
+            logo
+        </div>
+        <ul style="list-style-type: none;">
+            <li>home +</li>
+            <li>contac +</li>
+            <li>About us + </li>
+            <li>services +
+            </li>
+        </ul>
+
+        <div class="mobileno">91+123456789
+            <div class="mob1"></div>
+            <div class="mob2"></div>
+
+        </div>
+    </nav>
+    <div class="services">
+        <svg viewbox="0 0 10 2">
+            <text font-weight="bold" x="5" y="1" text-anchor="middle" font-size="1" fill="none" stroke-width=".015"
+                stroke="#fff" font-family="sans-serif">AUTO SERVICES</text>
+        </svg>
+    </div>
+
+    <div class="carinfo">
+        <h3>car servicing in india</h3>
+        <h1>Fix Any Complex Car Solution</h1>
+        <h6>take payment online with scalable platform with your perfect bussines</h6>
+
+        <button class="btn">Get Services</button>
+
+
+    </div>
+    <div class="pngcar">
+        <img src="https://purepng.com/public/uploads/large/purepng.com-orange-nissan-gtr-carcarvehicletransportnissan-961524653189rdctf.png"
+            alt="">
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
